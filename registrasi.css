@@ -9,7 +9,7 @@ body{
     height: 100vh;
 }
 
-.login-form-2{
+.registrasi{
     padding: 5%;
     background: #004c9c;
     box-shadow: 0 0 10px black, 0 0 15px black;
@@ -17,18 +17,14 @@ body{
     margin-right: 250px;
     margin-top: 140px;
     width: 380px;
-    height: 285px;
+    height: 270px;
     border-radius: 55px;
 }
 
-.login-form-2 h3{
+.registrasi h3{
     text-align: center;
     color: #fff;
     font-size: 25px;
-}
-
-.login-container form{
-    padding: 10%;
 }
 
 .btnSubmit{
@@ -44,23 +40,17 @@ body{
     margin-top: 27px;
 }
 
-.login-form-1 .btnSubmit{
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-}
-
 .emailfill{
     height: 33px;
     width: 377px;
     border-radius: 20px;
     border: 2px solid white;
     text-align: center;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .passwordfill{
-    margin-top: 20px;
+    margin-top: 10px;
     height: 33px;
     width: 377px;
     border-radius: 20px;
@@ -68,43 +58,11 @@ body{
     text-align: center;
 }
 
-.forgetPwd{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 4px;
-    font-size: 13px;
-}
-
-.forget{
+.passwordconfirm{
     margin-top: 10px;
-}
-
-.login-form-1 .ForgetPwd{
-    color: #004c9c;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.suggestion{
-    color: white;
-    margin-top: 7px;
-}
-
-.suggestion p{
-    font-size: 13px;
-}
-
-.suggestion a{
-    position: absolute;
-    top: 70%;
-    margin-left: 154px;
-}
-
-.registration{
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    margin-top: 4px;
-    font-size: 13px;
+    height: 33px;
+    width: 377px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
 }

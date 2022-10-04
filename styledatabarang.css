@@ -28,7 +28,7 @@
 /* side bar */
 .sidebar{
     left: 0;
-   padding-top: 2px;
+    padding-top: 2px;
     width: 250px;
     height: 92vh;
     background: #3E96FF 50%;
@@ -51,6 +51,7 @@
     font-weight: bold;
     background-color: #A1C5FB;
     box-shadow: 2px 2px 4px rgba(138, 137, 137, 0.2);
+    margin-top: 4px;
 }
 
 .sidebar ul{

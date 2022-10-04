@@ -8,12 +8,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
     <link rel="stylesheet" href="styledatabarang.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
@@ -34,7 +35,7 @@
         <ul>
             <a href=""><p > <i class="fa-solid fa-house"></i>Dasboard</p></a>  
             <a href=""><p><i class="fa-solid fa-user"></i>Admin</p> </a>
-            <a href=""><p><i class="fa-solid fa-box"></i>Produk</p></a>
+            <a href=""><p><i class="fa-solid fa-box"></i>Data Pemasukan</p></a>
             <a href=""><p><i class="fa-solid fa-database"></i>Data Barang</p></a>
         </ul>
     </div>
@@ -57,13 +58,13 @@
                 while($pel = mysqli_fetch_array($query)){
                     echo "
                     <tr>
-                    <td>$pel[Id_barang]</td>
+                    <td>$pel[id_barang]</td>
                     <td>$pel[nama_barang]</td>
                     <td>$pel[harga_barang]</td>
                     <td>$pel[stok_barang]</td>
                     <td>
-                        <a href='formeditbarang.php?Id_barang=".$pel['Id_barang']."' class =\"barangupdate\">Update</a>
-                        <a href='hapusbarang.php?Id_barang=".$pel['Id_barang']."' class =\"baranghapus\">Hapus</a>
+                        <a href='formeditbarang.php?id_barang=".$pel['id_barang']."' class =\"barangupdate\">Update</a>
+                        <a href='hapusbarang.php?id_barang=".$pel['id_barang']."' class =\"baranghapus\">Hapus</a>
                     </td>
                 </tr>";
 
