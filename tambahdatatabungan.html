@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tambahdatauser</title>
-    <link rel="stylesheet" href="tambahdatauser.css">
+    <link rel="stylesheet" href="tambahdatatabungan.css">
     <!--Icon-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="navbar">
-          <img src="assets/tb.png" alt=""> <p>KOPERASI SMK TARUNA BHAKTI DEPOK</p>
+          <img src="assets/tb.png" alt="eror"> <p>KOPERASI SMK TARUNA BHAKTI DEPOK</p>
         </div>
         <!-- Side bar -->
       <div class="sidebar">
@@ -28,29 +28,31 @@
     </div>
     </div>
     <div class="container-2">
-        <form action="simpan-berita.php" method="POST">
-            <div class="tambah-berita">
-                <h3>Tambah Barang</h3>
+        <form action="" method="POST">
+            <div class="tambah-user">
+                <h3>Tambah Data Tabungan</h3>
             </div>
             <div class="data">
-               <label> ID Barang :</label>
-                <input  required="required" type="text" name="nomer">
-            
+                <label>NO ID</label>
+                <input required="required" type="number" name="nomer">
             <div class="data">
-                <label>Nama Barang  :</label>
-                <input  required="required" type="text" name="gambar">
+                <label>TANGGAL</label>
+               <input required="required" type="date" name="nama">
             </div>
             <div class="data">
-                <label>Harga Barang :</label>
-                <input  required="required" type="text" name="berita">
+                <label>NAMA</label>
+                <input required="required" type="text" name="berita">
             </div>
             <div class="data">
-                <label>Stok Barang :</label>
-                <input  required="required" type="text" name="tempat_kejadian">
+                <label>PEMASUKAN</label>
+                <input required="required" type="number" name="tempat_kejadian">
             </div>
-      
-        
-    </form>
+        </div>
+            <div class="simpan-berita">
+                <input type="submit" name="simpan" value="simpan">
+            </div>
+        </form>
     </div>
+
 </body>
 </html>
