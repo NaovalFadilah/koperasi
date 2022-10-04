@@ -74,3 +74,40 @@ ul p:hover i{
 .container-2{
     margin-bottom: 10px;
 }
+
+.tambah-berita h3{
+    margin-left: 700px;
+    font-size: 30px;
+    margin-top: -650px;
+}
+
+.data1 label{
+    margin-left: 500px;
+    margin-top: 50px;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-2 input{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -25px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    background-color: #D9D9D9;
+}
+.simpan-berita input{
+    display: flex;
+    justify-content: center;
+    background-color: #74b9ff;
+    border: none;
+    border-radius: 15px;
+    width: 95px;
+    height: 31px;
+    margin: 30px;
+    font-size: 16px;
+    margin-left: 60%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
