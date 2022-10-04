@@ -1,52 +1,82 @@
 *{ 
     margin: 0; 
     padding: 0; 
+    font-family: 'Space Grotesk', sans-serif;
 } 
+
 .login-form-2{
     padding: 5%;
-    background: #0062cc;
+    background: #004c9c;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 400px;
+    margin-left: 420px;
     margin-right: 250px;
-    margin-top: 150px;
+    margin-top: 140px;
     width: 380px;
     height: 250px;
+    border-radius: 55px;
 }
+
 .login-form-2 h3{
     text-align: center;
     color: #fff;
+    font-size: 25px;
 }
+
 .login-container form{
     padding: 10%;
 }
-.btnSubmit
-{
-    width: 50%;
+
+.btnSubmit{
+    width: 30%;
+    height: 33px;
     border-radius: 1rem;
     padding: 1.5%;
     border: none;
     cursor: pointer;
+    font-weight: 600;
+    color: #004c9c;
+    background-color: #fff;
+    margin-top: 27px;
 }
+
 .login-form-1 .btnSubmit{
     font-weight: 600;
     color: #fff;
     background-color: #0062cc;
 }
-.form-group{
-    margin-left: 150px;
+
+.emailfill{
+    height: 33px;
+    width: 377px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
+    margin-top: 33px;
 }
-.login-form-2 .btnSubmit{
-    font-weight: 600;
-    color: #0062cc;
-    background-color: #fff;
+
+.passwordfill{
+    margin-top: 20px;
+    height: 33px;
+    width: 377px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
 }
-.login-form-2 .ForgetPwd{
-    color: #fff;
+
+.forgetPwd{
+    color: white;
     font-weight: 600;
     text-decoration: none;
+    margin-top: 4px;
+    font-size: 13px;
 }
+
+.forget{
+    margin-top: 10px;
+}
+
 .login-form-1 .ForgetPwd{
-    color: #0062cc;
+    color: #004c9c;
     font-weight: 600;
     text-decoration: none;
 }
