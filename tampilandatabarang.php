@@ -1,6 +1,14 @@
+<?php
+    include 'koneksi.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styledatabarang.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -12,7 +20,6 @@
     <!--Icon-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <!--Navbar-->
@@ -21,6 +28,7 @@
           <img src="logo.png" alt="">  <p>KOPERASI SMK TARUNA BHAKTI DEPOK</p>
         </div>
     </div>
+
     <!-- Side bar -->
     <div class="sidebar">
         <ul>
@@ -30,4 +38,38 @@
             <a href=""><p><i class="fa-solid fa-database"></i>Data Barang</p></a>
         </ul>
     </div>
-<body>
+
+    <!-- Table -->
+    <div class="databarang">
+        <h2>DATA BARANG</h2>
+        <button class="create"><a href="" style="color: white; text-decoration: none;">Tambah Data</a></button>
+        <table class="tabeldata">
+            <tr>
+                <th class="thb1">ID Barang</th>
+                <th class="thb2">Nama Barang</th>
+                <th class="thb3">Harga Barang</th>
+                <th class="thb4">Stok Barang</th>
+                <th class="thb5">Aksi</th>
+            </tr>
+            <?php
+                $sql = "SELECT * FROM data_barang";
+                $query = mysqli_query($connect, $sql);
+                while($pel = mysqli_fetch_array($query)){
+                    echo "
+                    <tr>
+                    <td>$pel[Id_barang]</td>
+                    <td>$pel[nama_barang]</td>
+                    <td>$pel[harga_barang]</td>
+                    <td>$pel[stok_barang]</td>
+                    <td>
+                        <a href='formeditbarang.php?Id_barang=".$pel['Id_barang']."' class =\"barangupdate\">Update</a>
+                        <a href='hapusbarang.php?Id_barang=".$pel['Id_barang']."' class =\"baranghapus\">Hapus</a>
+                    </td>
+                </tr>";
+
+                }
+            ?>
+        </table>
+    </div>
+</body>
+</html>
