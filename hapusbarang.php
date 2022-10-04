@@ -1,9 +1,9 @@
 <?php
     include 'koneksi.php';
 
-    $Id_barang = $_GET['Id_barang'];
+    $Id_barang = $_GET['id_barang'];
 
-    $sql = "DELETE FROM `data_barang` WHERE data_barang.Id_barang = '$Id_barang'";
+    $sql = "DELETE FROM `data_barang` WHERE data_barang.id_barang = '$id_barang'";
 
     $query = mysqli_query($connect, $sql);
         

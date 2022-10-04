@@ -58,13 +58,13 @@
                 while($pel = mysqli_fetch_array($query)){
                     echo "
                     <tr>
-                    <td>$pel[Id_barang]</td>
+                    <td>$pel[id_barang]</td>
                     <td>$pel[nama_barang]</td>
                     <td>$pel[harga_barang]</td>
                     <td>$pel[stok_barang]</td>
                     <td>
-                        <a href='formeditbarang.php?Id_barang=".$pel['Id_barang']."' class =\"barangupdate\">Update</a>
-                        <a href='hapusbarang.php?Id_barang=".$pel['Id_barang']."' class =\"baranghapus\">Hapus</a>
+                        <a href='formeditbarang.php?id_barang=".$pel['id_barang']."' class =\"barangupdate\">Update</a>
+                        <a href='hapusbarang.php?id_barang=".$pel['id_barang']."' class =\"baranghapus\">Hapus</a>
                     </td>
                 </tr>";
 
