@@ -7,12 +7,12 @@
         $username = $_POST['username'];
         $password = md5($_POST['password']);
 
-        $sql = "SELECT * FROM login_admin WHERE username='$username' AND pasword='$pasword'";
+        $sql = "SELECT * FROM login_admin WHERE username='$username' AND password='$pasword'";
         $result = mysqli_query($conn, $sql);
         if (!$result->num_rows > 0) {
             $row = mysqli_fetch_assoc($result);
             $_SESSION['username'] = $row['username'];
-            header("Location: dashboard.php");
+            header("Location: tambahdatauser.html");
             } else {
                 echo "<script>alert('Tidak Sama. Coba Lagi')</script>";
             }
@@ -43,7 +43,7 @@
                 <input type="password" class="passwordfill" placeholder="Your Password *" value="" name="password">
             </div>
             <div class="submit">
-                <button class="btnSubmit"><a href="dashboard.php" style="color: #004c9c; text-decoration: none;">Login</a></button>
+                <button class="btnSubmit"><a href="tambahdatauser.html" style="color: #004c9c; text-decoration: none;">Login</a></button>
             </div>
             <div class="forget">
                 <a href="#" class="forgetPwd" value="Login">Forget Password?</a>
