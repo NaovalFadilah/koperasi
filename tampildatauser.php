@@ -51,7 +51,7 @@
                 <th class="thb5">Aksi</th>
             </tr>
             <?php
-                $sql = "SELECT * FROM data_barang";
+                $sql = "SELECT * FROM login_admin";
                 $query = mysqli_query($connect, $sql);
                 while($pel = mysqli_fetch_array($query)){
                     echo "

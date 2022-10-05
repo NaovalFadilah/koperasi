@@ -16,7 +16,7 @@
                         VALUES ('$username', '$pasword')";
                 $result = mysqli_query($conn, $sql);
                 if ($result) {
-                    header('Location: dashboard.php');
+                    header('Location: tambahdatauser.html');
                     $username = "";
                     $_POST['password'] = "";
                     $_POST['cpassword'] = "";
@@ -57,7 +57,7 @@
                 <input type="password" class="passwordconfirm" placeholder="Confirm Password *" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
             </div>
             <div class="submit">
-                <button class="btnSubmit"><a href="dashboard.php" style="color: #004c9c; text-decoration: none;">Register</a></button>
+                <button class="btnSubmit"><a href="tambahdatauser.html" style="color: #004c9c; text-decoration: none;">Register</a></button>
             </div>
         </form>
     </div>
