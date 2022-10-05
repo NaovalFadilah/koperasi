@@ -12,7 +12,7 @@
         if (!$result->num_rows > 0) {
             $row = mysqli_fetch_assoc($result);
             $_SESSION['username'] = $row['username'];
-            header("Location: dashboard.php");
+            header("Location: tampildatauser.php");
             } else {
                 echo "<script>alert('Tidak Sama. Coba Lagi')</script>";
             }

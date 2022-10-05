@@ -42,7 +42,7 @@
 
     <!-- Table -->
     <div class="databarang">
-        <h2>DATA BARANG</h2>
+        <h2>DATA Pemasukan</h2>
         <button class="create"><a href="data-pemasukan.html" style="color: white; text-decoration: none;">Tambah Data</a></button>
         <table class="tabeldata">
             <tr>
@@ -54,7 +54,7 @@
                 <th class="thb5">Aksi</th>
             </tr>
             <?php
-                $sql = "SELECT * FROM data_barang";
+                $sql = "SELECT * FROM transaksi";
                 $query = mysqli_query($connect, $sql);
                 while($pel = mysqli_fetch_array($query)){
                     echo "
