@@ -34,22 +34,20 @@
     <div class="sidebar">
         <ul>
             <a href=""><p > <i class="fa-solid fa-house"></i>Dasboard</p></a>  
-            <a href=""><p><i class="fa-solid fa-user"></i>Admin</p> </a>
-            <a href=""><p><i class="fa-solid fa-box"></i>Data Pemasukan</p></a>
-            <a href=""><p><i class="fa-solid fa-database"></i>Data Barang</p></a>
+            <a href="tampildatauser"><p><i class="fa-solid fa-user"></i>Admin</p> </a>
+            <a href="tampildatapemasukan.php"><p><i class="fa-solid fa-box"></i>Data Pemasukan</p></a>
+            <a href="tampildatabarang.php"><p><i class="fa-solid fa-database"></i>Data Barang</p></a>
         </ul>
     </div>
 
     <!-- Table -->
     <div class="databarang">
         <h2>DATA BARANG</h2>
-        <button class="create"><a href="" style="color: white; text-decoration: none;">Tambah Data</a></button>
+        <a href="simpan-user.php"></a>
         <table class="tabeldata">
             <tr>
-                <th class="thb1">ID Barang</th>
-                <th class="thb2">Nama Barang</th>
-                <th class="thb3">Harga Barang</th>
-                <th class="thb4">Stok Barang</th>
+                <th class="thb1">Username</th>
+                <th class="thb2">Password</th>
                 <th class="thb5">Aksi</th>
             </tr>
             <?php
@@ -58,13 +56,10 @@
                 while($pel = mysqli_fetch_array($query)){
                     echo "
                     <tr>
-                    <td>$pel[id_barang]</td>
-                    <td>$pel[nama_barang]</td>
-                    <td>$pel[harga_barang]</td>
-                    <td>$pel[stok_barang]</td>
+                    <td>$pel[username]</td>
+                    <td>$pel[pasword]</td>
                     <td>
-                        <a href='formeditbarang.php?id_barang=".$pel['id_barang']."' class =\"barangupdate\">Update</a>
-                        <a href='hapusbarang.php?id_barang=".$pel['id_barang']."' class =\"baranghapus\">Hapus</a>
+                        <a href='hapus-pemasukan.php?id_barang=".$pel['id_barang']."' class =\"baranghapus\">Hapus</a>
                     </td>
                 </tr>";
 
