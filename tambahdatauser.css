@@ -1,7 +1,6 @@
 *{ 
     margin: 0; 
     padding: 0; 
-    font-family: 'Montserrat', sans-serif;
 } 
 .navbar{
     width: 100%;
@@ -55,8 +54,7 @@
     font-weight: bold;
     background-color: #A1C5FB;
     box-shadow: 2px 2px 4px rgba(138, 137, 137, 0.2);
-    margin-top: 4px;
-    
+    margin-top: 20px;
     
     
     
@@ -73,51 +71,43 @@ ul p:hover i{
     padding-left: 50px;
     transition: .500s;
 }
-
-/* input */
 .container-2{
     margin-bottom: 10px;
-    margin-top: 110px;
-    margin-left: 51px;
 }
 
-.tambah-berita h3{ 
-    margin-left: 700px; 
-    font-size: 30px; 
-    margin-top: -650px; 
-    font-weight: 700;
-} 
- 
-.data1 label{ 
-    margin-left: 500px; 
-    margin-top: 50px; 
-    display: flex; 
-    font-size: 25px; 
+.tambah-berita h3{
+    margin-left: 700px;
+    font-size: 30px;
+    margin-top: -650px;
+}
+
+.data1 label{
+    margin-left: 500px;
+    margin-top: 50px;
+    display: flex;
+    font-size: 25px;
     font-weight: bold;
-} 
- 
-.container-2 input{ 
-    position: absolute; 
-    margin-left: 750px; 
-    margin-top: -25px; 
-    border-radius: 10px; 
-    width: 400px; 
-    height: 30px; 
-    background-color: #D9D9D9; 
+}
+
+.container-2 input{
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -25px;
+    border-radius: 10px;
+    width: 400px;
+    height: 30px;
+    background-color: #D9D9D9;
 }
 .simpan-berita input{
     display: flex;
     justify-content: center;
-    background-color: #74B9FF;
+    background-color: #74b9ff;
     border: none;
     border-radius: 15px;
     width: 95px;
     height: 31px;
     margin: 30px;
     font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    margin-left: 62%;
-    box-shadow: 2px 2px 5px rgba(0 , 0, 0, 0.2);
-    
+    margin-left: 60%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
